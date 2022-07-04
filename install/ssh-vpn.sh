@@ -79,7 +79,7 @@ apt dist-upgrade -y
 apt -y install wget curl
 
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -180,7 +180,7 @@ accept = 992
 connect = 127.0.0.1:1194
 END
 
-echo "=================  membuat Sertifikat OpenSSL ======================"
+echo "=================  create an OpenSSL Certificate ======================"
 echo "========================================================="
 #membuat sertifikat
 cd /etc/stunnel/
@@ -231,7 +231,7 @@ echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
 echo '.....done'
 echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
-echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
+echo 'Please send in your comments and/or suggestions to farukbrowser0@gmail.com'
 
 # xml parser
 cd
